@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avtomobil seçimi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Avtomobil seçimi</h2>
+  
+  <label for="marka">Marka:</label>
+  <select id="marka" onchange="takeModel()">
+    <option value="">Seçin</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+  </select>
+  
+  <label for="model">Model:</label>
+  <select id="model" onchange="searchAndShowPhoto()">
+    <option value=""></option>
+  </select>
+
+  <div id="photo"></div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
